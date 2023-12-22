@@ -113,3 +113,13 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
 
       <h2>Hello Below Root</h2>
+
+# Igniting our App 02:
+
+- Dive into essential package managers and module bundlers for React projects.
+
+- npm,parcel
+
+- Node modules
+
+- React app file structure
