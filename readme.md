@@ -75,3 +75,23 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 - DOM Tree is getting changed (removing node or adding node) , it is very expensive & react solves it very effectively
 
 - Using JavaScript we changed DOM (Manipulating DOM using js/react)
+
+- ReactElement (Object)=> HTML (Browser Understands)
+
+- create nested structure like this :
+
+      const parent = React.createElement(
+        "div",
+        { className: "parent" },
+        React.createElement(
+          "div",
+          { className: "child" },
+          React.createElement(
+            "h1",
+            { name: "lucky", className: "heading" },
+            "Hello World From React JS"
+          )
+        )
+      );
+
+- Use className not class in React
