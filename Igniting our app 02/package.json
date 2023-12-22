@@ -1,0 +1,16 @@
+{
+  "name": "igniting-our-app-02",
+  "version": "1.0.0",
+  "description": "ingniting our ap",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react"
+  ],
+  "author": "lucky",
+  "license": "ISC"
+}
