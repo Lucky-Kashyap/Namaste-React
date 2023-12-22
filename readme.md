@@ -56,3 +56,20 @@ The mission of this series is to take you from Zero to Hero in React. During thi
     </body>
 
     </html>
+
+- This is the Shortest Program of React JS (use CDN inside index.html)
+- It takes minimum effort to just put it inside our code
+
+- React will overwrite everything inside root.
+
+- This object is used for passing props (to give parameters).
+
+      ('h1',{name:'lucky','Hello World From React JS'});
+
+      <h1 name="lucky">Hello World From React JS</h1>
+
+- Most Costly operation is when DOM needs to be changed or updating (DOM tree gets changed)
+
+- DOM Tree is getting changed (removing node or adding node) , it is very expensive & react solves it very effectively
+
+- Using JavaScript we changed DOM (Manipulating DOM using js/react)
