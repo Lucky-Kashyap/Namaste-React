@@ -2,6 +2,14 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
 # Inception 01:
 
+- React is a library
+- Inject React & use it
+- This is the bueuty of library
+- React can only work in navbar,sidebar
+- React can work on what ever you make the root inside work react
+
+- React work in small portion of app
+
 - Write first react hello world program
 - Using react CDN we have create 'hello world' program
 
@@ -95,3 +103,13 @@ The mission of this series is to take you from Zero to Hero in React. During thi
       );
 
 - Use className not class in React
+
+- React is working inside div id root
+
+      <h1>Hello Top of Root</h1>
+      <div id="root">
+        Hello World
+      </div>
+
+
+      <h2>Hello Below Root</h2>
