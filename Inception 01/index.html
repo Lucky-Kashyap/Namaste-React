@@ -6,12 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inception 01</title>
 
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js"
+    integrity="sha512-d9vLYDXWeqicCZABUs1sKXFtQdgPM54lUUvGTvoYYvfEQvg63E76t+PvySnjlgs+ZHbcqKxs3AFom2C6hLIP4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script> -->
+
 </head>
 
 <body>
   <div id="root">
-    Hello World
+    <!-- Hello World -->
   </div>
+
+
+  <!-- Using JavaScript -->
+  <!-- <script>
+    let root = document.getElementById('root');
+
+    let heading = document.createElement('h1');
+
+    heading.innerHTML = 'Hello World From JavaScript';
+
+    root.appendChild(heading);
+  </script> -->
+
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script>
+    let heading = React.createElement('h1', {}, 'Hello World From React JS');
+
+
+    let root = document.getElementById('root');
+
+    const element = ReactDOM.createRoot(root);
+
+    element.render(heading);
+
+  </script>
 </body>
 
 </html>
