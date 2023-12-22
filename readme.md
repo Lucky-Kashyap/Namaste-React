@@ -68,6 +68,8 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
       <h1 name="lucky">Hello World From React JS</h1>
 
+- props are children + attributes that we pass inside element.
+
 - Most Costly operation is when DOM needs to be changed or updating (DOM tree gets changed)
 
 - DOM Tree is getting changed (removing node or adding node) , it is very expensive & react solves it very effectively

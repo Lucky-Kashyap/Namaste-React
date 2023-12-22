@@ -2,9 +2,11 @@
 
 let heading = React.createElement(
   "h1",
-  { name: "lucky" },
+  { name: "lucky", class: "heading" },
   "Hello World From React JS"
 );
+
+console.log(heading); // return object  react element
 
 let root = document.getElementById("root");
 
