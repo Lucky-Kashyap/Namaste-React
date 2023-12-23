@@ -124,6 +124,97 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
 - React app file structure
 
+- We can create our own create-react-app.
+
+  - create-react-app uses webpack & babel
+
+- we configure npm
+
+      npm init
+
+  - It will create package.json file
+  - It maintains version of app
+
 - Use parcel in our app
 
       npm i -D parcel
+
+- It will create a production ready code for application
+
+- Understanding about package.json & package-lock.json deeply
+
+- It will create lot of things that parcel need
+
+- create package-lock.json node_modules files
+
+- for running application in our local server we need to install react & react-dom for this & remove CDN links from index.html file
+
+- install react & react-dom
+
+      npm i react react-dom
+
+  - as the normal dependency we install this not dev dependency
+
+- There are two dependency are there:
+
+  - Normal Dependency:
+    - This is used for production also
+  - Dev Dependency:
+    - This is needed for our development phase
+    - All the packages that my project need i.e a dependency
+    - They are the packages that are required for development & testing purposes only
+
+- To run the Application in our system
+
+      npx parcel index.html
+
+- It will create a development server & it is done by the parcel
+
+- parcel keep track of everything:
+
+  - Hot Module Replacement
+  - Bundling
+  - Caching
+  - Minification
+  - Cleaning Our Code
+  - Super fast build algorithm
+  - Image Optimization
+  - Consistent Hashing
+  - Code Splitting
+  - Diagnostic Error Handling (beutiful error messages)
+  - Compatible with older version of browser
+  - Does compression
+  - Differential Bundling
+  - parcel does lot of things for us
+
+- Parcel manages port number
+- Parcel also take care of compatible with older version
+
+  - browser list
+
+         "browserslist": [
+           "last 2 Chrome version",
+           "last 2 Firefox version"
+         ]
+
+  - It means it will definately work on last 2 chrome & firefox version & that is the beuty of browserslist
+
+- parcel is a beast , it takes care of lot of things
+
+- for building production build
+
+      npx parcel build index.html
+
+  - for this we remove entry point i.e App.js file in main we give
+  - It conflicts with index.html file that we give at time of building index.html file as an entry point so remove it fro package.json file
+
+- It will generate production build & it is ready to shipped on server
+
+### Learn Lot of things from this lecure
+
+# Laying the foundation 03:
+
+- Understanding JSX, React componnets, and their compositions
+
+- JSX, React components
+- Class-based vs functional components
