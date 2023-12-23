@@ -2,9 +2,6 @@
   "name": "igniting-our-app-02",
   "version": "1.0.0",
   "description": "ingniting our ap",
-  
-
-
   "scripts": {
     "test": "jest"
   },
@@ -22,5 +19,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 2 Firefox version"
+  ]
 }
