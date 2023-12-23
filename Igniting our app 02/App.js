@@ -1,4 +1,6 @@
-// Hello world
+import React from "react";
+
+import ReactDOM from "react-dom";
 
 /* <div class='parent'>
 <div class='child'>
