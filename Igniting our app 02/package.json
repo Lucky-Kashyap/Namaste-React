@@ -12,5 +12,8 @@
     "react"
   ],
   "author": "lucky",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
 }

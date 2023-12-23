@@ -123,3 +123,7 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 - Node modules
 
 - React app file structure
+
+- Use parcel in our app
+
+      npm i -D parcel
