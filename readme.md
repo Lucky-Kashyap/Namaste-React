@@ -218,3 +218,16 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
 - JSX, React components
 - Class-based vs functional components
+- create npm scripts to start our project
+
+- Inside package.json
+
+      "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build index.html",
+        "test": "jest"
+      }
+
+- To run our project
+
+      npm run dev
