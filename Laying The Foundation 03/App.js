@@ -15,7 +15,11 @@ import ReactDOM from "react-dom/client";
 
 // JSX => React.createElement => ReactElement - JS Object => HTMLElement (render)
 
-const jsxHeading = <h1 className="heading">Namaste React via JSX</h1>;
+const jsxHeading = (
+  <h1 className="heading" tabIndex="2">
+    Namaste React via JSX
+  </h1>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

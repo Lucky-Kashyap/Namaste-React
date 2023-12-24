@@ -248,3 +248,13 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 - JSX => React.createElement => ReactElement - JS Object => HTMLElement (render)
 
 - Babel transpile the code JSX to React
+
+- For using attribtes in Elements
+
+- we use camelCase Syntax className, tabIndex...
+
+      const jsxHeading = (
+        <h1 className="heading" tabIndex="2">
+          Namaste React via JSX
+        </h1>
+      );
