@@ -231,3 +231,12 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 - To run our project
 
       npm run dev
+
+- writing JSX code
+
+      const jsxHeading = <h1 className="heading">Namaste React via JSX</h1>;
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      // root.render(heading);
+      root.render(jsxHeading);

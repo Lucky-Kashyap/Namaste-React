@@ -2,48 +2,19 @@ import React from "react";
 
 import ReactDOM from "react-dom/client";
 
-/* <div class='parent'>
-<div class='child'>
-  
-  <h1>HEading</h1>
-  </div>
-  </div> */
+// React Element  => Object => when we render (HTML Element)
 
-// let heading = React.createElement(
-//   "h1",
-//   { name: "lucky", class: "heading" },
-//   "Hello World From React JS"
-// );
-
-const parent = React.createElement(
-  "div",
-  { className: "parent" },
-  React.createElement("div", { className: "child" }, [
-    React.createElement(
-      "h1",
-      { name: "lucky", className: "heading" },
-      "Hello World From React JS"
-    ),
-    React.createElement(
-      "h2",
-      { name: "lucky", className: "heading" },
-      "Hello World Sibling Element"
-    ),
-  ])
+const heading = React.createElement(
+  "h1",
+  { className: "heading" },
+  "Namaste React"
 );
 
-// let heading = React.createElement(
-//   "h1",
-//   { name: "lucky", class: "heading" },
-//   "Hello World From React JS"
-// );
+// JSx
 
-// console.log(heading); // return object  react element
+const jsxHeading = <h1 className="heading">Namaste React via JSX</h1>;
 
-let root = document.getElementById("root");
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const element = ReactDOM.createRoot(root);
-
-// element.render(heading);
-
-element.render(parent);
+// root.render(heading);
+root.render(jsxHeading);
