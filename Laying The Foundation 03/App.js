@@ -25,11 +25,22 @@ import ReactDOM from "react-dom/client";
 
 // Everything in react is a componenst
 
+const Fn = () => "true";
+
 const JsxHeading = () => {
   return (
-    <h1 className="heading" tabIndex="2">
-      Namaste React via Functional Components
-    </h1>
+    <div>
+      <h1 className="heading" tabIndex="2">
+        Namaste React via Functional Components <Fn />
+      </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas
+        porro odio laborum placeat quidem culpa magnam reiciendis quo debitis
+        maiores, expedita, fugit animi? Laboriosam aperiam praesentium quasi
+        dolorum iste.
+      </p>
+      <button>Click Me</button>
+    </div>
   );
 };
 

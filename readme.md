@@ -270,6 +270,8 @@ The mission of this series is to take you from Zero to Hero in React. During thi
   - Functional components - new way of writing code
   - Class Based components - old way of writing code
 
+- A Normal JS function which return some jsx code
+
 - Create functional Component
 
       const JsxHeading = () => {
