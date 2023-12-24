@@ -232,6 +232,8 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
       npm run dev
 
+- JSX is not HTMl, It is HTML or XML like syntax
+
 - writing JSX code
 
       const jsxHeading = <h1 className="heading">Namaste React via JSX</h1>;
@@ -240,3 +242,9 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
       // root.render(heading);
       root.render(jsxHeading);
+
+- JSX (transpiled before it reaches the JS Engine) - PARCEL - Babel
+
+- JSX => React.createElement => ReactElement - JS Object => HTMLElement (render)
+
+- Babel transpile the code JSX to React
