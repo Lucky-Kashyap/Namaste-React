@@ -287,3 +287,29 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 - use it like this
 
       <JsxHeading/>  // call it
+
+- Calling another component from a component is known as component composition
+
+- Use element inside component
+
+      const title = <h1>Namaste REact Element</h1>;
+
+      {title}
+
+- we can write any peice of JS code using {}
+
+      const Fn = () => "true";
+
+
+
+      const JsxHeading = () => {
+        return (
+          <div>
+            <h1 className="heading" tabIndex="2">
+              Namaste React via Functional Components <Fn />
+            </h1>
+            <h4>Use Element :-{title}</h4>
+
+          </div>
+        );
+      };
