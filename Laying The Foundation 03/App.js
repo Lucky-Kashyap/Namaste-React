@@ -15,13 +15,25 @@ import ReactDOM from "react-dom/client";
 
 // JSX =>Babel transpiles it to React.createElement => ReactElement - JS Object => HTMLElement (render)
 
-const jsxHeading = (
-  <h1 className="heading" tabIndex="2">
-    Namaste React via JSX
-  </h1>
-);
+// const jsxHeading = (
+// <h1 className="heading" tabIndex="2">
+//   Namaste React via JSX
+// </h1>
+// );
+
+// React Components => functional & class based components
+
+// Everything in react is a componenst
+
+const JsxHeading = () => {
+  return (
+    <h1 className="heading" tabIndex="2">
+      Namaste React via Functional Components
+    </h1>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(heading);
-root.render(jsxHeading);
+root.render(<JsxHeading />);

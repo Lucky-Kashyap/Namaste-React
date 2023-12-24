@@ -264,3 +264,24 @@ The mission of this series is to take you from Zero to Hero in React. During thi
       <br/> <img/><hr/><input/> <></> ()
 
 - Mandotory to use () for multiple lines of code
+
+- React Components
+
+  - Functional components - new way of writing code
+  - Class Based components - old way of writing code
+
+- Create functional Component
+
+      const JsxHeading = () => {
+        return (
+          <h1 className="heading" tabIndex="2">
+            Namaste React via Functional Components
+          </h1>
+        );
+      };
+
+- Always use pascal namimg convention (HeadingOne) capital component name
+
+- use it like this
+
+      <JsxHeading/>  // call it
