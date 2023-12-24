@@ -251,10 +251,16 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 
 - For using attribtes in Elements
 
-- we use camelCase Syntax className, tabIndex...
+- we use camelCase Syntax className, tabIndex,htmlFor...
 
       const jsxHeading = (
         <h1 className="heading" tabIndex="2">
           Namaste React via JSX
         </h1>
       );
+
+- enclosed each tag
+
+      <br/> <img/><hr/><input/> <></> ()
+
+- Mandotory to use () for multiple lines of code

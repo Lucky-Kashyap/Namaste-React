@@ -13,7 +13,7 @@ import ReactDOM from "react-dom/client";
 // JSx
 // JSX (transpiled before it reaches the JS Engine) - PARCEL - Babel
 
-// JSX => React.createElement => ReactElement - JS Object => HTMLElement (render)
+// JSX =>Babel transpiles it to React.createElement => ReactElement - JS Object => HTMLElement (render)
 
 const jsxHeading = (
   <h1 className="heading" tabIndex="2">
