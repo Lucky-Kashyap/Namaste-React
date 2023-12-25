@@ -313,3 +313,33 @@ The mission of this series is to take you from Zero to Hero in React. During thi
           </div>
         );
       };
+
+- You can write any JS Expression using {}
+
+      let num = 20;
+
+      {num} {console.log('Hello')} {100+200}
+
+- Create infinite loop by composing components into another
+
+      const num = 45;
+
+      const JsxHeading = () => {
+        return (
+          <div>
+            <h1 className="heading" tabIndex="2">
+              Namaste React via Functional Components
+            </h1>
+            <Fn />
+            <h4>Use Element :-{title}</h4>
+
+          </div>
+        );
+      };
+      const title = (
+        <h1>
+          Namaste REact Element
+          {num}
+          {/* <JsxHeading /> */}
+        </h1>
+      );

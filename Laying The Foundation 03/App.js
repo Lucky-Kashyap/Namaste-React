@@ -27,19 +27,27 @@ import ReactDOM from "react-dom/client";
 
 const Fn = () => "true";
 
-const title = <h1>Namaste REact Element</h1>;
+// const title = <h1>Namaste REact Element</h1>;
 
 // component composition use other component into a component
 
 // we write js in {} any peice of JS code
 
+const num = 45;
+
 const JsxHeading = () => {
   return (
     <div>
       <h1 className="heading" tabIndex="2">
-        Namaste React via Functional Components <Fn />
+        Namaste React via Functional Components
       </h1>
+      <Fn />
       <h4>Use Element :-{title}</h4>
+      <p>
+        Write JS Code inside curly braces{" "}
+        {/* {console.log("Hello writing JS Code...!!!")} */}
+        {num}
+      </p>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas
         porro odio laborum placeat quidem culpa magnam reiciendis quo debitis
@@ -50,6 +58,14 @@ const JsxHeading = () => {
     </div>
   );
 };
+
+const title = (
+  <h1>
+    Namaste REact Element
+    {num}
+    {/* <JsxHeading /> */}
+  </h1>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
