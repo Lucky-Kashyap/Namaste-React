@@ -343,3 +343,28 @@ The mission of this series is to take you from Zero to Hero in React. During thi
           {/* <JsxHeading /> */}
         </h1>
       );
+
+- JSX Sanitizes the data
+
+- JSX will takes care of the injection attacks
+
+- JSX will escape it
+
+- It prevents cross-side-scripting attack for you
+
+      const data = api.getData();
+
+- JSX blindly not return this it sanitizes the data then return it so that we can you any api (prevents cross-side-scripting) from attackers
+
+- It automatically taken care by React
+
+- we can also call component like this:
+
+        // three ways are same to use component
+
+
+        {Title()}  // call this way is same as
+
+        <Title/>    // same way
+
+        <Title>  </Title>    // same way

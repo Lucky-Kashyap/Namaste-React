@@ -35,6 +35,9 @@ const Fn = () => "true";
 
 const num = 45;
 
+// const data = api.getData();   // bad api malicious data reurn
+// JSX sanitizes tha data
+
 const JsxHeading = () => {
   return (
     <div>
