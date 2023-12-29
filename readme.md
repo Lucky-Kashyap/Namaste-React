@@ -368,3 +368,30 @@ The mission of this series is to take you from Zero to Hero in React. During thi
         <Title/>    // same way
 
         <Title>  </Title>    // same way
+
+# Talk is Cheap, Show Me the Code 04:
+
+- Implementing React's core features, managing state, and working with UI data.
+
+- React app building
+
+- props/state
+
+- function mapping
+
+- Header
+
+  - logo
+  - NavItems
+
+- Body
+
+  - Search Bar Input
+  - RestaurantContainer
+  - RestaurantCard
+
+- Footer
+  - Copyright
+  - Links
+  - Address
+  - Contact
