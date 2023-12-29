@@ -15,13 +15,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* border: 1px solid black; */
 }
 .logo-container {
   width: 130px;
 }
 .logo-container .logo {
   width: 100%;
+  padding: 1vw;
   cursor: pointer;
+  object-fit: cover;
+  object-position: center;
 }
 .nav-items ul {
   width: 100%;
@@ -41,4 +45,35 @@ body {
 }
 .nav-items ul li:hover {
   border-bottom: 1px solid red;
+}
+
+.res-container {
+  width: 100%;
+  gap: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3vw;
+}
+
+.res-card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid grey;
+}
+
+.search-box {
+  text-align: center;
+  width: 100%;
+  padding: 1vw;
+}
+.search-box button {
+  padding: 0.3vw 0.4vw;
+  border-radius: 0.5vw;
+  margin-left: 0.5vw;
+}
+.search-box input {
+  width: 15%;
+  border-radius: 0.4vw;
+  padding: 0.3vw;
 }

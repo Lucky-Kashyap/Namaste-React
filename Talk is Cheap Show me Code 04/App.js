@@ -23,10 +23,41 @@ const Header = () => {
     </div>
   );
 };
+
+const RestaurantCard = () => {
+  return (
+    <div className="res-card">
+      <h3>Meghana Foods</h3>
+    </div>
+  );
+};
+
+const Search = () => {
+  return (
+    <div className="search-box">
+      <input type="text" />
+      <button>Search</button>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">
+        <Search />
+      </div>
+      <div className="res-container">
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
 const AppLayout = () => {
   return (
     <div>
       <Header />
+      <Body />
     </div>
   );
 };
