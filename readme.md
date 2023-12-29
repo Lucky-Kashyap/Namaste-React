@@ -390,6 +390,10 @@ The mission of this series is to take you from Zero to Hero in React. During thi
   - RestaurantContainer
   - RestaurantCard
 
+    - img
+    - star rating
+    - name of res, star rating, cuisines, delivery time
+
 - Footer
   - Copyright
   - Links
