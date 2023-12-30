@@ -415,7 +415,40 @@ The mission of this series is to take you from Zero to Hero in React. During thi
         https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/
 
 - Footer
+
   - Copyright
   - Links
   - Address
   - Contact
+
+- props : props is a short form of properties
+
+  - props is something which you can pass to the component
+  - normal JS function arguments to a function
+  - passing a prop to component
+  - passing an argument to a function
+
+- we can use Real Data (Swiggy Data)
+
+- Config Driver UI:
+
+  - Different location, diff restaurant
+  - real time
+  - website is driven by data
+  - Data layer + UI Layer
+  - All the UI is driven by a config
+  - Our Application needs to dynamic these days
+  - It can work in diff places
+  - UI is powered by data
+  - Both Data & UI layer together build a frontend application
+
+- Loop over array of list through map method
+
+       {restaurantData?.map((item, index) => (
+          <RestaurantCard resData={item} key={index} />
+        ))}
+
+- Always give key when loop through in an array of list
+- React optimizes its lifecycle
+- we need to identify each item (Keys should be unique)
+- It optimizes the performance of an application
