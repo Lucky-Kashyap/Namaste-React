@@ -394,6 +394,26 @@ The mission of this series is to take you from Zero to Hero in React. During thi
     - star rating
     - name of res, star rating, cuisines, delivery time
 
+- Use map method to dynamically add data
+
+  - info.name
+
+  - info.locality
+
+  - info.costForTwo
+
+  - info.cuisines
+
+  - info.avgRating
+
+  - info.areaName
+
+  - info.cloudinaryImageId
+
+        //Image URL
+
+        https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/
+
 - Footer
   - Copyright
   - Links
