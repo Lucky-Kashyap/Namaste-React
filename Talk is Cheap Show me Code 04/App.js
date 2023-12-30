@@ -1151,17 +1151,21 @@ const Header = () => {
 const RestaurantCard = (props) => {
   console.log(props);
 
+  const { resData } = props;
+
+  console.log(resData);
+
   return (
     <div className="res-card">
       <img
         className="res-card-image"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bd384dc3b5ef057f8b2dcb91f243f33b"
+        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${resData[0].info.cloudinaryImageId}`}
         alt="res-card-logo"
       />
-      <h3>KFC</h3>
-      <h4>north</h4>
-      <h4>4.4 stars</h4>
-      <h4>38 mins</h4>
+      <h3>{resData[0].info.name}</h3>
+      <h4>{resData[0].info.cuisines.join(", ")}</h4>
+      <h4>{resData[0].info.avgRating} stars</h4>
+      <h4>{resData[0].info.costForTwo}</h4>
     </div>
   );
 };
