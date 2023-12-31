@@ -453,7 +453,16 @@ The mission of this series is to take you from Zero to Hero in React. During thi
 - we need to identify each item (Keys should be unique)
 - It optimizes the performance of an application
 
-Project ShowCase :  Food App
+Project ShowCase : Food App
 
 ![ezgif com-video-to-gif-converter](https://github.com/Lucky-Kashyap/Namaste-React/assets/88204554/d979a0d8-96a1-4c0f-9d59-f1adae94ff40)
 
+# Let's Get Hooked 05:
+
+- Exploring React Hooks and understanding their importance
+
+- File Structure
+
+- Import/export
+
+- React Hooks (useState)
