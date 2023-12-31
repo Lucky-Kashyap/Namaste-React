@@ -466,3 +466,27 @@ Project ShowCase : Food App
 - Import/export
 
 - React Hooks (useState)
+
+- Two types of Export/Import
+
+  - Default Export/Import
+
+  - export default Component
+
+        import Component from 'path'
+
+        Named Export/Import
+
+        export const Component
+
+        import {Component} from 'path'
+
+- Handle click
+
+- Event handler
+
+- State Variable
+
+       const [listOfRestaurants, setListOfRestaurants] = useState([]);
+
+      listOfRestaurants = listOfRestaurants.filter((res)=> res.data.avgRating>4)

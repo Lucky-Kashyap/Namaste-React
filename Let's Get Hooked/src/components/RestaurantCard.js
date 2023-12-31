@@ -1,7 +1,7 @@
 import { IMG_CDN } from "../constants/config";
 
 const RestaurantCard = (props) => {
-  console.log(props);
+  // console.log(props);
 
   const { resData } = props;
 
