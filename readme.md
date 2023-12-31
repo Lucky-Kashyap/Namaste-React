@@ -534,3 +534,8 @@ Project ShowCase : Food App
 - The diff algorithm refers to the process of comparing two trees of nodes,such as the virtual DOM trees in React, to determine the differences b/w them
 
 - The diff algo determines the minimum no. of operations required to transform one tree into another
+
+Project ShowCase :
+
+![ezgif com-optimize](https://github.com/Lucky-Kashyap/Namaste-React/assets/88204554/c41c6e18-fcae-47ee-a52b-34c67436d8c0)
+
