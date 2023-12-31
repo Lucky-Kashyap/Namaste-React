@@ -487,6 +487,50 @@ Project ShowCase : Food App
 
 - State Variable
 
+- A Hook is just a normal JS function which is given by react
+
+- It comes with superpowers
+
+- Everytime you want your variables to be in sync with the UI you need to use your state variable
+
+- whenever a state variable updates react re-renders the component
+
        const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
       listOfRestaurants = listOfRestaurants.filter((res)=> res.data.avgRating>4)
+
+- useState() hook return two things one is variable & another is setter function
+
+        const arr = useState([]);
+
+        const list = arr[0];
+
+        const setList = arr[1];
+
+- Every component in REact maintains a state so, you can put some variables on to that state and everytime you have to create a local variable you use state inside React
+
+#### Virtual DOM
+
+- It is concept we keep representation of a DOM with us which is known as virtual DOM
+
+- Reconciliation Algorightm that React uses to diff one tree from another
+
+- React are efficiently finds out the diff between virtual DOM & update the UI
+
+- React is doing very efficiently DOM Manipulation
+
+- In React 16, new ALgo (React Fiber) new way of finding diff & updating the UI
+
+- React fiber is a Reconciliation Engine
+
+- React Fiber is a concept of React JS that is used to render a system faster & smoother
+
+- Reconciliation is a algorithm that React uses to diff one tree with another to determine which parts needs to be changed
+
+- Reconciliation is the process where we have diff algo, which finds out the diff between the trees
+
+- It will re-render only the portion which is required which is found by the diff algo
+
+- The diff algorithm refers to the process of comparing two trees of nodes,such as the virtual DOM trees in React, to determine the differences b/w them
+
+- The diff algo determines the minimum no. of operations required to transform one tree into another

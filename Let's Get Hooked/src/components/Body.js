@@ -6,12 +6,16 @@ import Search from "./Search";
 const Body = () => {
   // const listOfRestaurants = [];
 
-  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [listOfRestaurants, setListOfRestaurants] = useState(restaurantData);
 
   const handleClick = () => {
     // console.log("click handle");
 
-    setListOfRestaurants(restaurantData);
+    const filteredRestaurant = listOfRestaurants.filter(
+      (res) => res.info.avgRating > 4.3
+    );
+
+    setListOfRestaurants(filteredRestaurant);
   };
   return (
     <div className="body">
