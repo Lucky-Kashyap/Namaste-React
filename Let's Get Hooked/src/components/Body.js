@@ -1,4 +1,4 @@
-import { restaurantData } from "../constants/restaurantData";
+import { restaurantData } from "../constants/config";
 import RestaurantCard from "./RestaurantCard";
 import Search from "./Search";
 
