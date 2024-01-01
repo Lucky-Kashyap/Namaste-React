@@ -600,3 +600,11 @@ Project ShowCase :
 
 - By pass Cors Error Using Cors Extension Plugin
 - When getting data from one domain to another it occurs
+
+#### Conditional Rendering
+
+      // Conditional Rendering
+
+      // if (listOfRestaurants.length === 0) {
+      //   return <Shimmer />;
+      // }

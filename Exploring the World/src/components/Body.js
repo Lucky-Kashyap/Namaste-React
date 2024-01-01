@@ -43,11 +43,15 @@ const Body = () => {
     setListOfRestaurants(filteredRestaurant);
   };
 
-  if (listOfRestaurants.length === 0) {
-    return <Shimmer />;
-  }
+  // Conditional Rendering
 
-  return (
+  // if (listOfRestaurants.length === 0) {
+  //   return <Shimmer />;
+  // }
+
+  return listOfRestaurants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="search">
         {/* <Search /> */}
