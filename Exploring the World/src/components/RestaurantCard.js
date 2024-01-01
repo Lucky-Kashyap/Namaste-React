@@ -5,6 +5,8 @@ const RestaurantCard = (props) => {
 
   const { resData } = props;
 
+  console.log(resData);
+
   // console.log(resData);
 
   // console.log(item);

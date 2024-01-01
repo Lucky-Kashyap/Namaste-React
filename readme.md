@@ -547,3 +547,56 @@ Project ShowCase :
 - Conditional Rendering
 
 - API usage
+
+#### Monolythic & MicroServices Architecture
+
+- MicroServices:
+
+  - Easier to Change
+  - Easy To Maintain
+
+- Seperation of Concern / Single Responsibility Principle
+
+- small-small functionality combine together forms a big large scale Apllication
+- Each Service has its own Job
+- How those application are connected
+
+  - swiggy.com
+  - :3000 -> /
+  - :4000 -> /dapi
+  - :5000 -> /notification
+
+- Monolythic:
+  - we used to have huge big project
+  - Single Project
+  - Many things written in one single project
+  - Like DB connectivity, SMS Code, API Code,JSP,UI
+  - one project / one repo / 100 people works on
+
+#### How do you call an API
+
+- Using fetch
+- Two ways:
+
+  - Loads -> API -> Render
+  - Loads -> Render -> API -> Render
+
+- As soon as our page loads it will call
+- fetch data dynamically from API & populate our page
+- When our APP Loads
+- React has one of the best Render mechanism
+- React renders your UI very fast
+
+- useEffect Hook
+
+  - It allows you to perform side effects in your components
+  - Some side-effects are fetching data, directly updating the DOM & timers
+
+- Syntax:
+
+      useEffect(()=>{
+        fetchData();
+      },[]);
+
+- By pass Cors Error Using Cors Extension Plugin
+- When getting data from one domain to another it occurs
