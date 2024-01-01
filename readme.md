@@ -539,3 +539,11 @@ Project ShowCase :
 
 ![ezgif com-optimize](https://github.com/Lucky-Kashyap/Namaste-React/assets/88204554/c41c6e18-fcae-47ee-a52b-34c67436d8c0)
 
+# Exploring the World 06:
+
+- Architecture insights, useEffect hook, and working with APIs
+
+- Architecture, useEffect
+- Conditional Rendering
+
+- API usage
