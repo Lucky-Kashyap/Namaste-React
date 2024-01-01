@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { restaurantData } from "../constants/config";
 import RestaurantCard from "./RestaurantCard";
 import Search from "./Search";
@@ -7,6 +7,10 @@ const Body = () => {
   // const listOfRestaurants = [];
 
   const [listOfRestaurants, setListOfRestaurants] = useState(restaurantData);
+
+  useEffect(() => {
+    console.log("Body Component");
+  });
 
   const handleClick = () => {
     // console.log("click handle");
