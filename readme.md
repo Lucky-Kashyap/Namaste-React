@@ -616,3 +616,13 @@ Project ShowCase :
         const [btnName,setBtnName] = useState('Login');
 
         <button onClick={()=>setBtnName('Logout')}>{btnName}</button>
+
+- Toggle Login/Logout functionality
+
+        const handleClick = () => {
+          if (btnName === "Login") {
+            setBtnName("Logout");
+          } else {
+            setBtnName("Login");
+          }
+        };

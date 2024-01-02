@@ -5,7 +5,11 @@ const Header = () => {
   const [btnName, setBtnName] = useState("Login");
 
   const handleClick = () => {
-    setBtnName("Logout");
+    if (btnName === "Login") {
+      setBtnName("Logout");
+    } else {
+      setBtnName("Login");
+    }
   };
 
   return (
