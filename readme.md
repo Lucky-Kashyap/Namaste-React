@@ -626,3 +626,41 @@ Project ShowCase :
             setBtnName("Login");
           }
         };
+
+- Create Search Functionality
+
+  - Track input value for this we have to bind value
+  - And for every change on input value we have to set that value using onChange()
+
+        onChange={(e)=>setSearchText(e.target.value)}
+
+- Filter Data according to search Text
+
+  - for this we have create another filteredRestaurant state variable and write logic for it
+  - onClick function we have to call filterData function
+
+        filterData(searchText,listOfRestaurant);
+
+          useEffect(() => {
+            filterData(searchText, listOfRestaurants);
+            console.log(filteredRestaurant);
+          }, [searchText]);
+
+          const filterData = (searchText, listOfRestaurants) => {
+            const filterData = listOfRestaurants?.filter((restaurant) =>
+              restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase())
+            );
+
+            // return filterData;
+
+            setFilteredRestaurant(filterData);
+
+            return filterData;
+          };
+
+- on Button Click we have to call this function
+
+        onClick={() => {
+              const data = filterData(searchText, listOfRestaurants);
+              setFilteredRestaurant(data);
+            }}
