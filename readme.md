@@ -664,3 +664,9 @@ Project ShowCase :
               const data = filterData(searchText, listOfRestaurants);
               setFilteredRestaurant(data);
             }}
+
+- When Ever state variables update, react triggers a reconciliation cycle (re-renders the component)
+
+- React is finding the difference b/w older virtual DOM & newer Virtual DOM. React has faster render cycle
+
+- DOM Manipulation operation is very expensive & react is very efficient in Doing this..
