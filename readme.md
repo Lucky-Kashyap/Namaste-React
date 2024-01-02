@@ -608,3 +608,11 @@ Project ShowCase :
       // if (listOfRestaurants.length === 0) {
       //   return <Shimmer />;
       // }
+
+- Why we need state in react?
+
+  - we need state variable in react because when ever state variable changes/updated then UI will be Re-render & this is not the case with normal JS variables
+
+        const [btnName,setBtnName] = useState('Login');
+
+        <button onClick={()=>setBtnName('Logout')}>{btnName}</button>

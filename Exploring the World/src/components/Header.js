@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { LOGO_IMG } from "../constants/config";
 
 const Header = () => {
+  const [btnName, setBtnName] = useState("Login");
+
+  const handleClick = () => {
+    setBtnName("Logout");
+  };
+
   return (
     <div className="header">
       <div className="logo-container">
@@ -13,6 +20,7 @@ const Header = () => {
           <li>Contact Us</li>
           <li>Cart</li>
         </ul>
+        <button onClick={handleClick}>{btnName}</button>
       </div>
     </div>
   );

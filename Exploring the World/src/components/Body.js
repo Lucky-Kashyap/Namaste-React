@@ -64,9 +64,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {/* <RestaurantCard resData={restaurantData} /> */}
-        {listOfRestaurants?.map((item, index) => (
+        {/* {listOfRestaurants.map((item, index) => (
           <RestaurantCard resData={item} key={index} />
-        ))}
+        ))} */}
       </div>
     </div>
   );
