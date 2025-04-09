@@ -127,3 +127,16 @@ h4 {
   font-weight: 600;
   letter-spacing: 0.1vw;
 }
+.card {
+  width: 300px;
+  background-color: #f1f1f1;
+}
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

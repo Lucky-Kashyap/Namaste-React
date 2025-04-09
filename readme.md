@@ -670,3 +670,11 @@ Project ShowCase :
 - React is finding the difference b/w older virtual DOM & newer Virtual DOM. React has faster render cycle
 
 - DOM Manipulation operation is very expensive & react is very efficient in Doing this..
+
+# Swiggy API Issue Resolve:
+
+- By pass CORS : request one domain name to another domain name
+
+- Using this URL 'https://proxy.corsfix.com/?' + API_URL & Also try this 'https://corsproxy.io/?' + API_URL
+
+- By pass CORS issue using external websites help.

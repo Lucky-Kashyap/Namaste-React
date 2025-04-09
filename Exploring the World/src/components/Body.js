@@ -71,8 +71,17 @@ const Body = () => {
 
       // console.log(listOfRestaurants);
 
+      // const data = await fetch(
+      //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+      // );
+      // const data = await fetch(
+      //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.9124336&lng=75.7872709&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      // );
+      // const data = await fetch(
+      //   "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.9124336&lng=75.7872709&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      // );
       const data = await fetch(
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+        "https://proxy.corsfix.com/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.9124336&lng=75.7872709&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
       const json = await data.json();
 
@@ -80,14 +89,24 @@ const Body = () => {
       // setRestaurantList(json?.data?.cards[2]?.data?.data?.cards);
 
       // setRestaurantList(json?.data?.cards[4]?.data?.data?.cards);
+      // setFilteredRestaurant(
+      //   json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      //     ?.restaurants
+      // );
+      // setListOfRestaurants(
+      //   json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      //     ?.restaurants
+      // );
       setFilteredRestaurant(
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
       setListOfRestaurants(
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
+
+      console.log(json);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
