@@ -678,3 +678,40 @@ Project ShowCase :
 - Using this URL 'https://proxy.corsfix.com/?' + API_URL & Also try this 'https://corsproxy.io/?' + API_URL
 
 - By pass CORS issue using external websites help.
+
+# Finding the path 07:
+
+- Learning about Routing
+
+#### About useEffect Hook
+
+- without dependency array it will be called everytime when the component renders
+
+      useEffect(()=>{
+
+      });
+
+- with empty dependency array it will be called once after component render
+
+      useEffect(()=>{
+
+      },[]);
+
+- with some dependency array it will be called when the dependency changes. useEffect will called everytime if dependency is updated
+
+      useEffect(()=>{
+
+      },[btnText]);
+
+#### Rule for Hooks writing
+
+- Never write hook outside component
+
+- Never write hook inside conditional statement (if) (else)
+
+- Never write hook inside (for loop)
+
+- Don't do that (inside function)
+
+- Always write hook inside the component at the higher level (top of the body)
+
