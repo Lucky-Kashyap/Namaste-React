@@ -715,3 +715,31 @@ Project ShowCase :
 
 - Always write hook inside the component at the higher level (top of the body)
 
+#### Routing
+
+- Use react-router-dom package to implement routing in app
+
+- Use useRouteError() hook to show error status for error page (if no routes matches then show ErrorPage)
+
+- Create appRouter file
+
+      const appRouter = createBrowserRouter([
+        {
+          path:'/',
+          element:<AppLayout/>
+        },
+         {
+          path:'/about',
+          element:<About/>
+        },
+         {
+          path:'/contact',
+          element:<Contact/>
+        },
+      ])
+  
+- Pass it in RouterProvider 
+
+      root.render(<RouterProvider router={appRouter} />);
+
+
