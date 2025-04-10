@@ -742,4 +742,36 @@ Project ShowCase :
 
       root.render(<RouterProvider router={appRouter} />);
 
+- Creating children routes
 
+- Also learn dynamic routing (detail page by id)
+- we can use Outlet for children routing
+
+      <Outlet/>
+
+      const appRouter = createBrowserRouter([
+        {
+          path: "/",
+          element: <AppLayout />,
+          errorElement: <ErrorPage />,
+
+          children: [
+            {
+              path: "/",
+              element: <Body />,
+            },
+            {
+              path: "/restaurant/:id",
+              element: <RestaurantMenu />,
+            },
+            {
+              path: "/about",
+              element: <About />,
+            },
+            {
+              path: "/contact",
+              element: <Contact />,
+            },
+          ],
+        },
+      ]);

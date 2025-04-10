@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IMG_CDN } from "../constants/config";
 
 // const RestaurantCard = (props) => {
@@ -39,24 +40,29 @@ const RestaurantCard = ({
   locality,
   address,
   avgRating,
+  id,
 }) => {
+  console.log(id);
   return (
-    <div className="card">
-      <img src={IMG_CDN + cloudinaryImageId} />
-      <h2>{name}</h2>
-      <h3>{cuisines.join(", ")}</h3>
-      <h4>{area}</h4>
-      <span>
-        <h4>
-          <i className="fa-solid fa-star">{avgRating}</i>
-        </h4>
-        <h4>{lastMileTravelString}</h4>
-        <h4>{costForTwoString}</h4>
-      </span>
-      <h4>{cityState}</h4>
-      <h4>{locality}</h4>
-      <h4>{address}</h4>
-    </div>
+    <Link to={`/restaurant/${id}`}>
+      {" "}
+      <div className="card">
+        <img src={IMG_CDN + cloudinaryImageId} />
+        <h2>{name}</h2>
+        <h3>{cuisines.join(", ")}</h3>
+        <h4>{area}</h4>
+        <span>
+          <h4>
+            <i className="fa-solid fa-star">{avgRating}</i>
+          </h4>
+          <h4>{lastMileTravelString}</h4>
+          <h4>{costForTwoString}</h4>
+        </span>
+        <h4>{cityState}</h4>
+        <h4>{locality}</h4>
+        <h4>{address}</h4>
+      </div>
+    </Link>
   );
 };
 
