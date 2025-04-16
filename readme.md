@@ -775,3 +775,36 @@ Project ShowCase :
           ],
         },
       ]);
+- Use useParams() hook for getting route params id
+
+      const {id} = useParams();
+
+
+# Let's Get Classy
+
+- Learning class component
+- Create state variable inside constructor
+
+      constructor(props) {
+          super(props);
+
+          this.state = {
+            count: 0,
+          };
+
+      }
+- Never Update state variable Directly
+- Using setState we can update
+
+
+      this.setState({
+          count: this.state.count + 1,
+      });
+
+- Learning about React LifeCycle
+
+1 - Mounting
+
+2 - Updating
+
+3 - Unmounting
