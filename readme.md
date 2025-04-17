@@ -922,6 +922,8 @@ Project ShowCase :
           </Suspense>
         ),
 
+- This will make our application performant
+
 
 # Jo Dikhta hai woh Bikta hai
 
