@@ -867,4 +867,63 @@ Project ShowCase :
         }
       },[]);
 
-      
+# Optimising Our App
+
+#### Custom Hooks
+
+- Use custom hooks for seperate responsibility
+
+- Single Responsibility Principle :  It means suppose if you have any single identity of your code that should have a single responsibility.
+
+- It means you break down your code into small small modules so that your code becomes maintable & more testable.
+
+- Hooks are like utility functions
+- Create UseOnline custom hook which checks whether we are online/offline
+
+      import { useState, useEffect } from "react";
+
+      const useOnline = () => {
+        const [isOnline, setIsOnline] = useState(navigator.onLine);
+
+        useEffect(() => {
+          const handleOnline = () => setIsOnline(true);
+          const handleOffline = () => setIsOnline(false);
+
+          window.addEventListener("online", handleOnline);
+          window.addEventListener("offline", handleOffline);
+
+          return () => {
+            window.removeEventListener("online", handleOnline);
+            window.removeEventListener("offline", handleOffline);
+          };
+        }, []);
+
+        return isOnline;
+      };
+
+      export default useOnline;
+
+#### Code Spliting/ Dynamic Bundling/ Lazy Loading
+
+- Seperate code
+
+- All the code does not load at once & it is only come when it is requested.
+
+- This will make our application very performant
+
+
+      const Grocery = lazy(()=>import("./components/Grocery"));
+
+
+      path:"/grocery",
+      element:(
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <Grocery />
+          </Suspense>
+        ),
+
+
+# Jo Dikhta hai woh Bikta hai
+
+#### Learning about styling the component
+
