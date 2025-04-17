@@ -808,3 +808,63 @@ Project ShowCase :
 2 - Updating
 
 3 - Unmounting
+
+- Once the component is mounted then it calls componentDidMount
+
+- React is mounted in two phases:
+
+1 - Render Phase
+
+2 - Commit Phase
+
+- React optimizes it,This is an optimization of React. because there are two children over here.
+
+- React is Batching up the multiple childrens because of DOM Update 
+
+- Once the commit phase starts react try to update the DOM
+
+- componentWillUnMount is called when we are leaving the page (Just before component unMount)
+
+#### Learn about cleaning things
+
+- When we are changing the page about - contact the componentDidMount is called again & again if we write code 
+
+
+      this.timer = setInterval(() => {
+        console.log("It runs...");
+      }, 1000);
+
+- We need to clear this timer otherwise it will runs and it will loss the performance of our app
+
+- so we need to clean this up in componentWillUnMount
+
+
+      componentWillUnmount() {
+          clearInterval(this.timer);
+      }
+
+- Same with useEffect
+
+      useEffect(()=>{
+
+        const timer = setInterval(()=>{
+          console.log('It runs...');
+        },1000);
+      },[]);
+
+
+- CleanUp 
+
+   useEffect(()=>{
+
+        const timer = setInterval(()=>{
+          console.log('It runs...');
+        },1000);
+
+        return ()=>{
+
+          clearInterval(timer);
+        }
+      },[]);
+
+      

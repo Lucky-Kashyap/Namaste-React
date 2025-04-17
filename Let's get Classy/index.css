@@ -152,3 +152,6 @@ a {
   text-align: center;
   margin: 2rem;
 }
+.counter-app > div > h3 {
+  text-align: left;
+}
