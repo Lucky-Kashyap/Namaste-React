@@ -929,3 +929,34 @@ Project ShowCase :
 
 #### Learning about styling the component
 
+- Various ways to style component in React JS
+
+- Inline Style
+- External Style
+- Styled Components
+- SASS / SCSS
+
+- Use UI library -
+    - Bootstrap
+    - Material UI
+    - Chakra UI
+    - Ant Design
+    - Daisy UI
+    - Taiwind CSS
+
+
+- We can used customized values and color in taiwlind
+
+      @theme {
+        --color-primaryColor: #e30613;
+      }
+
+      <h2 className="text-primaryColor">Count</h2>
+
+- It makes the development process very fast.
+- It will only include the CSS i.e. required.
+- It keeps the bundle size small.
+- It is very light weight.
+- It never ships unused CSS.
+
+
