@@ -959,4 +959,8 @@ Project ShowCase :
 - It is very light weight.
 - It never ships unused CSS.
 
+# Data is the New Oil
 
+#### Learning about High Order Component
+
+- 
